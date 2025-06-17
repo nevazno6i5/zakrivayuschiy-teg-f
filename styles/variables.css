@@ -2,7 +2,7 @@
 :root {
         --main-font: 'Inter';
         --accent-font: 'PressStart2P';
-        --background-image: url('../images/background.png');
+       /* --background-image: url('../images/background.png');*/
         --background-color: #FFFFFF;
         --content-width:  clamp(375px, 100vw, 700px);
         --image-height: clamp(375px, 100vw, 696px);
