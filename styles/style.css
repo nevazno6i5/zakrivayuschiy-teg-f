@@ -16,20 +16,19 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-image:
-        repeating-linear-gradient(90deg,
-            var(--gray) 0px 2px,
-            transparent 2px 4px),
-        repeating-linear-gradient(180deg,
-            var(--gray) 0px 2px,
-            transparent 2px 4px),
-        linear-gradient(180deg,
-            var(--light-gray) 0.01%,
-            var(--dark-gray) 100%);
-/*git hub не пропускает градиент,не знаю что делать */    
+    repeating-linear-gradient(90deg,
+    var(--gray) 0px 2px,
+    transparent 2px 4px),
+    repeating-linear-gradient(180deg,
+    var(--gray) 0px 2px,
+    transparent 2px 4px),
+    linear-gradient(180deg,
+    var(--light-gray) 0.01%,
+    var(--dark-gray) 100%);
+    /*git hub не пропускает градиент,не знаю что делать var(--background-image) */
     width: 100%;
     max-width: 100%;
 }
-
 .header {
     display: grid;
     justify-content: center;
