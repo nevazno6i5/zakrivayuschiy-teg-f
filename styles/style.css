@@ -16,15 +16,15 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-image:
-    repeating-linear-gradient(90deg,
-    var(--gradient-base) 0px 2px,
-    transparent 2px 4px),
-    repeating-linear-gradient(180deg,
-    var(--gradient-base) 0px 2px,
-    transparent 2px 4px),
-    linear-gradient(180deg,
-    var(--gradient-light) 0.01%,
-    var(--gradient-dark) 100%);
+        repeating-linear-gradient(90deg,
+            var(--gradient-base) 0px 2px,
+            transparent 2px 4px),
+        repeating-linear-gradient(180deg,
+            var(--gradient-base) 0px 2px,
+            transparent 2px 4px),
+        linear-gradient(180deg,
+            var(--gradient-light) 0.01%,
+            var(--gradient-dark) 100%);
     max-width: 100%;
 }
 
@@ -32,7 +32,7 @@
     display: grid;
     justify-content: center;
     margin-top: 50px;
-    grid-template-rows: repeat( 3, minmax(138px, auto));
+    grid-template-rows: repeat(3, minmax(138px, auto));
 }
 
 .background-text {
@@ -144,11 +144,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-} 
+}
 
 .common-button:hover {
     cursor: pointer;
-    color:  var(--main-color);
+    color: var(--main-color);
 }
 
 .common-button:hover::before {
@@ -170,7 +170,7 @@
 }
 
 .common-button:hover .icon-svg {
-    filter:invert(100%);
+    filter: invert(100%);
     transition: 0.5s ease-in-out;
 }
 
@@ -233,9 +233,9 @@
     filter: hue-rotate(0.5turn) opacity(90%) saturate(390%);
 }
 
-@supports(-webkit-text-stroke: 1px  var(--main-color)) or ((text-stroke: 1px  var(--main-color))) {
+@supports(-webkit-text-stroke: 1px var(--main-color)) or ((text-stroke: 1px var(--main-color))) {
     .image-text {
-        -webkit-text-stroke: 1px  var(--main-color);
+        -webkit-text-stroke: 1px var(--main-color);
         text-shadow: none;
     }
 }
@@ -243,13 +243,13 @@
 .footer {
     display: grid;
     justify-content: center;
-    grid-template-rows:  repeat( 2, minmax(104px, auto));
+    grid-template-rows: repeat(2, minmax(104px, auto));
 }
 
 .dialog-button {
     display: flex;
     outline: none;
-    background-color:  var(--main-color);
+    background-color: var(--main-color);
     margin-top: 50px;
     padding: 15px 19px;
     align-self: start;
@@ -275,24 +275,26 @@
     justify-items: center;
     gap: 10px;
 }
+
 .button-ok {
     padding: 12px 40px;
     width: clamp(237px, 100vw, 293px);
-    background-color:  var(--main-color);
+    background-color: var(--main-color);
     margin-top: 10px;
     grid-column: 1/3;
     text-transform: uppercase;
 }
 
-.tape-icon-dialog{
+.tape-icon-dialog {
     transform: scale(1.89);
 }
+
 .common-button:focus {
     outline: none;
 }
 
 .common-button:focus-visible {
-    border : var(--outline);
+    border: var(--outline);
     box-shadow: 2px 2px 0 var(--accent-color);
 }
 
@@ -303,7 +305,7 @@
 
 .card__icon-button:focus-visible {
     outline: var(--outline);
-    outline-offset: -2px;   
+    outline-offset: -2px;
 }
 
 .like-icon {
@@ -313,11 +315,13 @@
 
 @media (width <=375px) {
     .header {
-        grid-template-rows: repeat( 3, minmax(125px, auto));
+        grid-template-rows: repeat(3, minmax(125px, auto));
     }
+
     .title-box {
         line-height: 170%;
     }
+
     .dialog-button {
         display: grid;
         grid-template-rows: repeat(2, minmax(24px, auto));
