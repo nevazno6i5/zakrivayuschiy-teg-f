@@ -2,14 +2,14 @@
 :root {
         --main-font: 'Inter';
         --accent-font: 'PressStart2P';
-       /* --background-image: url('../images/background.png');*/
         --background-color: #FFFFFF;
+        --main-color: #fff;
         --content-width:  clamp(375px, 100vw, 700px);
         --image-height: clamp(375px, 100vw, 696px);
         --outline: 2px solid black;
-        --gray: #d3d3d3;
-        --light-gray: #e7e7e7;
-        --dark-gray: #1a1a1a;
+        --gradient-base: #d3d3d3;
+        --gradient-light: #e7e7e7;
+        --gradient-dark: #1a1a1a;
         --core-volor:#fff;
         --contour-color:#000;
         --animation-fill-color: red;
