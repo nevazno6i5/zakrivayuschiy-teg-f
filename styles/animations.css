@@ -19,11 +19,12 @@
     transition-delay: 0.03s;
 }
 
-.main-body {
-     transition-delay: 0.05s;
-}
+/*.main-body {
+     transition: 0.3s;
+}*/
 .contour {
     fill: var(--accent-color);
+    transition: 0.3s ease-in-out;
 }
 .like-icon:hover .main-body {
     fill: var(--accent-color);
@@ -56,11 +57,12 @@
 
 .like-icon.is-liked .main-body {
     fill: var(--animation-fill-color);
-    transition-delay: 0.1s;
+    transition-delay: 0.3s;
 }
 
 .like-icon.is-liked .core {
     fill: var(--animation-fill-color);
+    transition-delay: 0s;
 }
 
 .sparks {
@@ -68,7 +70,7 @@
 }
 
 .like-icon.is-liked .sparks {
-    animation: sparks ease-in 0.1s 1;
+    animation: sparks 0.3s ease-in 0.3s 1;
 }
 
 @keyframes heart {

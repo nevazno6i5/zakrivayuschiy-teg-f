@@ -26,6 +26,7 @@
             var(--gradient-light) 0.01%,
             var(--gradient-dark) 100%);
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 .header {
@@ -37,6 +38,7 @@
 
 .background-text {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -72,43 +74,47 @@
 
 .title-box {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0 10px;
     line-height: 200%;
 }
 
 .card-img {
-    width: 100%;
     height: var(--image-height);
     object-fit: cover;
     object-position: center;
     outline: var(--outline);
+    width: 100%;
 }
 
 .posts-text {
     font-family: var(--main-font), sans-serif;
     font-size: 18px;
+    font-variation-settings:'wght' 400;
 }
-
+.post-title {
+    font-variation-settings:'wght' 700;
+}
 .main-text {
     font-weight: 400;
 }
 
 .card__like-button {
     background-color: transparent;
-    border: none;
-    transition: box-shadow 0.3s ease;
 }
 
 .card__icon-button {
     background-color: transparent;
     border: none;
-    transition: outline 0.1s ease;
+    transition: outline 0.03s ease;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .button {
     display: flex;
+    flex-wrap: wrap;
     justify-self: end;
     align-items: center;
     min-height: 90px;
@@ -138,7 +144,7 @@
     min-width: 130px;
     position: relative;
     overflow: hidden;
-    transition: 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out, box-shadow 0.3s ease;
     color: var(--accent-color);
     z-index: 1;
     display: flex;
@@ -170,19 +176,20 @@
 }
 
 .common-button:hover .icon-svg {
-    filter: invert(100%);
+    color: var(--main-color);
     transition: 0.5s ease-in-out;
+    mix-blend-mode: difference;
 }
 
 .icon-svg {
     color: var(--accent-color);
-    transition: color 0.3s ease;
     width: 21px;
     height: 21px;
 }
 
 .image-box {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -248,6 +255,7 @@
 
 .dialog-button {
     display: flex;
+    flex-wrap: wrap;
     outline: none;
     background-color: var(--main-color);
     margin-top: 50px;
@@ -286,11 +294,14 @@
 }
 
 .tape-icon-dialog {
-    transform: scale(1.89);
+    transform: translate(9px, 9px);
+    width: 39px;
+    height: 39px;
 }
 
 .common-button:focus {
     outline: none;
+    fill: currentColor;
 }
 
 .common-button:focus-visible {
@@ -327,10 +338,6 @@
         grid-template-rows: repeat(2, minmax(24px, auto));
         justify-items: center;
         gap: 0;
-    }
-
-    .tape-icon {
-        transform: scale(1.34);
     }
 
     .icon-svg {
