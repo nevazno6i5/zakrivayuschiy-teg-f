@@ -4,7 +4,7 @@
         --accent-font: 'PressStart2P';
         --background-color: #FFFFFF;
         --main-color: #fff;
-        --content-width:  clamp(375px, 100vw, 700px);
+      /*  --content-width:  clamp(375px, 100vw, 700px);*/
         --image-height: clamp(375px, 100vw, 696px);
         --outline: 2px solid black;
         --gradient-base: #d3d3d3;

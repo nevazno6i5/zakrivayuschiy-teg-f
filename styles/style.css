@@ -26,7 +26,8 @@
             var(--gradient-light) 0.01%,
             var(--gradient-dark) 100%);
     max-width: 100%;
-    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .header {
@@ -39,17 +40,17 @@
 .background-text {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
     grid-row: 1/4;
 }
 
 .section {
-    width: var(--content-width);
     outline: var(--outline);
     background-color: var(--background-color);
     margin-block-start: 56px;
+    max-width: 700px;
 }
 
 .header-title {
@@ -64,6 +65,7 @@
 
 .header-text {
     font-family: var(--accent-font), fantasy;
+    margin:0 10px;
 }
 
 .main {
@@ -101,7 +103,7 @@
 }
 
 .card__like-button {
-    background-color: transparent;
+   background-color: var(--main-color);
 }
 
 .card__icon-button {
@@ -132,6 +134,7 @@
     text-align: center;
     position: relative;
     z-index: 2;
+    color: var(--main-color);
 }
 
 .dialog-text {
@@ -144,7 +147,7 @@
     min-width: 130px;
     position: relative;
     overflow: hidden;
-    transition: color 0.5s ease-in-out, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
     color: var(--accent-color);
     z-index: 1;
     display: flex;
@@ -154,7 +157,6 @@
 
 .common-button:hover {
     cursor: pointer;
-    color: var(--main-color);
 }
 
 .common-button:hover::before {
@@ -175,18 +177,12 @@
     z-index: 0;
 }
 
-.common-button:hover .icon-svg {
-    color: var(--main-color);
-    transition: 0.5s ease-in-out;
-    mix-blend-mode: difference;
-}
-
 .icon-svg {
-    color: var(--accent-color);
+    color: var(--main-color);
     width: 21px;
     height: 21px;
+    mix-blend-mode: difference;
 }
-
 .image-box {
     display: flex;
     flex-wrap: wrap;
@@ -294,7 +290,6 @@
 }
 
 .tape-icon-dialog {
-    transform: translate(9px, 9px);
     width: 39px;
     height: 39px;
 }
@@ -343,5 +338,11 @@
     .icon-svg {
         width: 28px;
         height: 28px;
+    }
+}
+
+@media (max-width: 700px) {
+    .section {
+        width: 100%;
     }
 }
